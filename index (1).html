@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김수현 기자 | 커튼콜</title>
+  <style>
+    :root { --bg:#14090b; --red:#b3202e; --text:#f3ece6; --sub:#b9aaa3; --card:#221114; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    header { position: sticky; top: 0; background: rgba(20,9,11,.92); border-bottom: 1px solid #3a1d22; display: flex; justify-content: space-between; align-items: center; padding: 14px 6vw; z-index: 10; }
+    header .logo { font-weight: 700; letter-spacing: 1px; }
+    header nav a { margin-left: 22px; color: var(--sub); font-size: 15px; }
+    header nav a:hover { color: var(--text); }
+    .hero { text-align: center; padding: 110px 6vw 90px; background: radial-gradient(ellipse at top, #4a1019 0%, var(--bg) 70%); }
+    .hero small { color: var(--red); letter-spacing: 4px; font-weight: 700; }
+    .hero h1 { font-size: clamp(40px, 8vw, 76px); margin: 14px 0; }
+    .hero p { color: var(--sub); max-width: 520px; margin: 0 auto 30px; }
+    .btn { display: inline-block; background: var(--red); padding: 12px 28px; border-radius: 999px; font-weight: 700; }
+    .btn:hover { background: #d02a3a; }
+    section { padding: 70px 6vw; max-width: 1000px; margin: 0 auto; }
+    h2 { font-size: 28px; margin-bottom: 8px; }
+    h2 + p { color: var(--sub); margin-bottom: 30px; }
+    .profile { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
+    .photo { width: 160px; height: 160px; border-radius: 50%; background: var(--card); border: 2px solid var(--red); display: grid; place-items: center; color: var(--sub); font-size: 13px; }
+    .profile div.info { flex: 1; min-width: 240px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .card { background: var(--card); border: 1px solid #3a1d22; border-radius: 14px; padding: 24px; }
+    .card:hover { border-color: var(--red); }
+    .card .ep { color: var(--red); font-weight: 700; font-size: 13px; }
+    .card h3 { margin: 6px 0 8px; font-size: 18px; }
+    .card p { color: var(--sub); font-size: 14px; }
+    ul.contact { list-style: none; }
+    ul.contact li { padding: 8px 0; border-bottom: 1px solid #3a1d22; color: var(--sub); }
+    footer { text-align: center; color: var(--sub); font-size: 13px; padding: 40px 6vw; border-top: 1px solid #3a1d22; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="logo">김수현 기자</span>
+    <nav>
+      <a href="#about">소개</a>
+      <a href="#series">커튼콜</a>
+      <a href="#contact">제보·문의</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <small>SBS 기획 시리즈</small>
+    <h1>커튼콜</h1>
+    <p>막이 내린 뒤에도 끝나지 않는 이야기.<br>김수현 기자가 진행합니다.</p>
+    <a class="btn" href="#series">에피소드 보기</a>
+  </div>
+
+  <section id="about">
+    <h2>기자 소개</h2>
+    <p>취재 현장에서 전하는 이야기</p>
+    <div class="profile">
+      <div class="photo">프로필 사진</div>
+      <div class="info">
+        <h3>김수현 기자</h3>
+        <p>SBS 기획 &lt;커튼콜&gt;을 진행합니다. 이곳에 약력과 취재 분야, 한 줄 소개를 적어 보세요.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="series">
+    <h2>커튼콜 에피소드</h2>
+    <p>※ 아래 내용은 GitHub 실습용 예시입니다.</p>
+    <div class="grid">
+      <article class="card">
+        <span class="ep">EP.01</span>
+        <h3>첫 번째 이야기</h3>
+        <p>에피소드 소개 문구를 입력하세요.</p>
+      </article>
+      <article class="card">
+        <span class="ep">EP.02</span>
+        <h3>두 번째 이야기</h3>
+        <p>에피소드 소개 문구를 입력하세요.</p>
+      </article>
+      <article class="card">
+        <span class="ep">EP.03</span>
+        <h3>세 번째 이야기</h3>
+        <p>에피소드 소개 문구를 입력하세요.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>제보·문의</h2>
+    <p>연락처는 실제 정보로 바꿔 주세요.</p>
+    <ul class="contact">
+      <li>이메일: example@example.com</li>
+      <li>전화: 000-0000-0000</li>
+    </ul>
+  </section>
+
+  <footer>© 2026 커튼콜 · GitHub 실습용 페이지</footer>
+
+</body>
+</html>
